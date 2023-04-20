@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mertcanaltin/quickJSON/issues"
   },
-  "homepage": "https://github.com/mertcanaltin/quickJSON#readme"
+  "homepage": "https://github.com/mertcanaltin/quickJSON#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
 }
