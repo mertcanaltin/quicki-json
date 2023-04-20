@@ -1,4 +1,4 @@
-function quickly(obj) {
+function quicki(obj) {
     let keys = [];
     let values = [];
   
@@ -19,6 +19,6 @@ function quickly(obj) {
   }
   
   module.exports = {
-    quickly,
+    quicki,
   };
   
