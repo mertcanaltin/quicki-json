@@ -1,4 +1,4 @@
-function quickify(obj) {
+function quickly(obj) {
     let keys = [];
     let values = [];
   
@@ -19,6 +19,6 @@ function quickify(obj) {
   }
   
   module.exports = {
-    quickify,
+    quickly,
   };
   
