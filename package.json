@@ -1,6 +1,6 @@
 {
   "name": "quicki",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "quickJSON is a fast and efficient JavaScript function for converting JSON data to strings",
   "main": "index.js",
   "scripts": {
