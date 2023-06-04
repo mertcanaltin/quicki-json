@@ -2,7 +2,7 @@ const quicki = require('../index').quicki;
 const assert = require('assert');
 
 describe('Speed Test', function () {
-  const obj = {
+  const obj = [{
     "pagination": {
       "total_count": 42,
       "current_page": 1,
@@ -8995,8 +8995,8 @@ describe('Speed Test', function () {
           }
         }
       }
-    }
-  };
+    }}]
+  ;
 
   it('JSON.stringify() Speed', function () {
     console.time('JSON.stringify()');
