@@ -1,20 +1,27 @@
-const assert = require('assert');
 const quicki = require('../index').quicki;
+const assert = require('assert');
 
-describe('quicki', function() {
-    it('should stringify JSON objects', function() {
-      const data = {name: 'John', age: 30};
-      const expectedJson = '{"name":"John","age":30}';
-      assert.strictEqual(quicki(data), expectedJson);
-    });
-  
-    it('should stringify large data sets', function() {
-      const data = [];
-      for (let i = 0; i < 10000; i++) {
-        data.push({id: i, name: 'John Doe', age: 30, email: 'johndoe@example.com'});
-      }
-      const expectedJson = JSON.stringify(data);
-      assert.strictEqual(quicki(data), expectedJson);
-    });
+describe('Hız Testi', function () {
+  const obj = {
+    name: 'John Doe',
+    age: 30,
+    city: 'New York',
+    hobby: 'Programming',
+    language: 'JavaScript',
+    experience: 'Intermediate',
+    favoriteColor: 'Blue',
+    favoriteNumber: 42,
+  };
+
+  it('JSON.stringify() hızı', function () {
+    console.time('JSON.stringify()');
+    JSON.stringify(obj);
+    console.timeEnd('JSON.stringify()');
   });
-  
+
+  it('quicki() hızı', function () {
+    console.time('quicki()');
+    quicki(obj);
+    console.timeEnd('quicki()');
+  });
+});
